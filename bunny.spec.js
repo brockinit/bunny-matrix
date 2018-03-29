@@ -2,15 +2,13 @@ const assert = require('assert');
 const Bunny = require('./bunny');
 
 describe('Bunny', () => {
-  it('should return the correct number of carrots with 4 x 3 array', () => {
+  it('should return the correct number of carrots with 3 x 2 array', () => {
     const garden = [
       [5, 7, 3],
-      [0, 0, 4],
-      [4, 6, 9],
-      [4, 5, 8]
+      [1, 0, 4]
     ];
     const mrBunny = new Bunny(garden);
-    assert.equal(mrBunny.carrotsEaten, 36);
+    assert.equal(mrBunny.carrotsEaten, 13);
   });
 
   it('should return the correct number of carrots with a 3 x 3 array', () => {
